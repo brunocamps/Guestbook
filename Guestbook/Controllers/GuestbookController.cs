@@ -18,7 +18,12 @@ namespace Guestbook.Controllers
                  orderby entry.DateAdded descending 
                  select entry).Take(20);
 
-            ViewBag.Entries = mostRecentEntries.ToList();
+            // ViewBag.Entries = mostRecentEntries.ToList();
+
+            // using strongly typed approach
+
+            var model = mostRecentEntries.ToList();
+
             return View();
         }
 
@@ -38,6 +43,17 @@ namespace Guestbook.Controllers
             _db.SaveChanges();
 
             return RedirectToAction("Index"); // because Index is an action
+        }
+
+        public ViewResult Show( int id )
+        {
+            var entry = _db.Entries.Find(id);
+
+            bool hasPermission = User.Identity.Name == entry.Name;
+
+            ViewData["hasPermission"] = hasPermission;
+
+            return View(entry);
         }
     }
 }

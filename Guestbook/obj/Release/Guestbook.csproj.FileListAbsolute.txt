@@ -98,8 +98,7 @@ C:\Users\BrunodeCampos\Documents\github\Guestbook\Guestbook\bin\System.Web.WebPa
 C:\Users\BrunodeCampos\Documents\github\Guestbook\Guestbook\bin\Newtonsoft.Json.xml
 C:\Users\BrunodeCampos\Documents\github\Guestbook\Guestbook\bin\Antlr3.Runtime.pdb
 C:\Users\BrunodeCampos\Documents\github\Guestbook\Guestbook\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\BrunodeCampos\Documents\github\Guestbook\Guestbook\obj\Debug\Guestbook.csproj.CoreCompileInputs.cache
-C:\Users\BrunodeCampos\Documents\github\Guestbook\Guestbook\obj\Debug\Guestbook.csproj.CopyComplete
-C:\Users\BrunodeCampos\Documents\github\Guestbook\Guestbook\obj\Debug\Guestbook.dll
-C:\Users\BrunodeCampos\Documents\github\Guestbook\Guestbook\obj\Debug\Guestbook.pdb
-C:\Users\BrunodeCampos\Documents\github\Guestbook\Guestbook\obj\Debug\Guestbook.csproj.AssemblyReference.cache
+C:\Users\BrunodeCampos\Documents\github\Guestbook\Guestbook\obj\Release\Guestbook.csproj.CoreCompileInputs.cache
+C:\Users\BrunodeCampos\Documents\github\Guestbook\Guestbook\obj\Release\Guestbook.csproj.CopyComplete
+C:\Users\BrunodeCampos\Documents\github\Guestbook\Guestbook\obj\Release\Guestbook.dll
+C:\Users\BrunodeCampos\Documents\github\Guestbook\Guestbook\obj\Release\Guestbook.pdb
