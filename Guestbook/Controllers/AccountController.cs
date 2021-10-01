@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guestbook.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,7 +10,12 @@ namespace Guestbook.Controllers
     public class AccountController : Controller
     {
         
-        public ActionResult LogOn()
+        public ActionResult LogOn(LogOnModel model, string returnUrl)
+        {
+            return View();
+        }
+
+        public ActionResult ChangePassword(ChangePasswordModel model, string returnUrl)
         {
             return View();
         }
