@@ -27,10 +27,6 @@ namespace Guestbook.Controllers
             return View();
         }
 
-        public ActionResult LogOn()
-        {
-            ViewBag.Message = "Log on page";
-            return View();
-        }
+        
     }
 }

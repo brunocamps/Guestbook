@@ -6,11 +6,12 @@ using System.Web;
 
 namespace Guestbook.Models
 {
+  
     public class LogOnModel
     {
         [Required]
         [Display(Name = "User name")]
-        public String UserName { get; set; }
+        public string UserName { get; set; }
 
         [Required]
         [DataType(DataType.Password)]

@@ -5,6 +5,11 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
+/*You need to have an action method with that name in your ErrorController. The request will be directed to the action method, not to the view file. 
+    Your action method can return that view (or any other view)*/
+
+// https://stackoverflow.com/questions/40183208/asp-net-mvc-5-system-doesnt-find-a-view-that-exists
+
 namespace Guestbook.Controllers
 {
     public class GuestbookController : Controller
@@ -24,7 +29,7 @@ namespace Guestbook.Controllers
 
             var model = mostRecentEntries.ToList();
 
-            return View();
+            return View(model);
         }
 
 
