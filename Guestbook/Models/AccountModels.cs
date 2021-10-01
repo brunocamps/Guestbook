@@ -19,6 +19,6 @@ namespace Guestbook.Models
         public string Password { get; set; }
 
         [Display(Name = "Remember me?")]
-        public bool RememberM { get; set; }
+        public bool RememberMe { get; set; }
     }
 }
