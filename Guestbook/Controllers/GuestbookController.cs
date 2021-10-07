@@ -12,11 +12,11 @@ using System.Web.Mvc;
 
 namespace Guestbook.Controllers
 {
-    public class GuestbookController : Controller
+    public class GuestbookController : Controller // inherits from Controller
     {
         private GuestbookContext _db = new GuestbookContext();
 
-        public ActionResult Index()
+        public ActionResult Index() // exposes public action method
         {
             var mostRecentEntries =
                 (from entry in _db.Entries
