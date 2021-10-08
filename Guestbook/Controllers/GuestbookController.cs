@@ -43,11 +43,15 @@ namespace Guestbook.Controllers
         [HttpPost] // restrict access to HTTP post [HttpPost] is a decorator. Accept GuestbookEntry as parameter
         public ActionResult Create(GuestbookEntry entry) // Method overloading (Originally Create() above)
         {
-            entry.DateAdded = DateTime.Now;
-            _db.Entries.Add(entry);
-            _db.SaveChanges();
+            if (ModelState.IsValid)
+            {
+                entry.DateAdded = DateTime.Now;
+                _db.Entries.Add(entry);
+                _db.SaveChanges();
 
-            return RedirectToAction("Index"); // because Index is an action
+                return RedirectToAction("Index"); // because Index is an action
+            }
+            return View(entry);
         }
 
         public ViewResult Show( int id )
