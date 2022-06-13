@@ -31,6 +31,8 @@ namespace Guestbook.Models
         public bool RememberMe { get; set; }
     }
 
+    // model dedicated to changing password? yes
+
     public class ChangePasswordModel
     {
         [Required]
