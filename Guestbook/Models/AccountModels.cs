@@ -6,7 +6,7 @@ using System.Web;
 
 namespace Guestbook.Models
 {
-  
+    // model dedicated to login 
     public class LogOnModel
     {
         [Required]
