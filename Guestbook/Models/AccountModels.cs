@@ -36,6 +36,7 @@ namespace Guestbook.Models
 
     public class ChangePasswordModel
     {
+        // syntax of required fields
         [Required]
         [DataType(DataType.Password)]
         [Display(Name = "Current password")]
