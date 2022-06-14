@@ -9,6 +9,7 @@ namespace Guestbook.Models
     // model dedicated to login 
     public class LogOnModel
     {
+        // syntax of a required attribute
         [Required]
         [Display(Name = "User name")]
         public string UserName { get; set; }
