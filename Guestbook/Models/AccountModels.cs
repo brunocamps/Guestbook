@@ -14,10 +14,12 @@ namespace Guestbook.Models
         [Display(Name = "User name")]
         public string UserName { get; set; }
 
+        // required email
         [Required]
         [Display(Name = "Email")]
         public string Email { get; set; }
 
+        // required password
         [Required]
         [DataType(DataType.Password)]
         [Display(Name = "Password")]
