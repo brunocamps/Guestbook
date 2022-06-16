@@ -50,6 +50,7 @@ namespace Guestbook.Models
         [Display(Name = "New Password")]
         public string NewPassword { get; set; }
 
+        // confirm new password
         [DataType(DataType.Password)]
         [Display(Name = "Confirm new password")]
         [Compare("NewPassword", ErrorMessage = "The new password" + " and confirmation password do not match")]
