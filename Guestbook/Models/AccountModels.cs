@@ -39,6 +39,7 @@ namespace Guestbook.Models
     public class ChangePasswordModel
     {
         // syntax of required fields
+        // annotation of required fields
         [Required]
         [DataType(DataType.Password)]
         [Display(Name = "Current password")]
@@ -51,6 +52,7 @@ namespace Guestbook.Models
         public string NewPassword { get; set; }
 
         // confirm new password
+        // annotations to confirm
         [DataType(DataType.Password)]
         [Display(Name = "Confirm new password")]
         [Compare("NewPassword", ErrorMessage = "The new password" + " and confirmation password do not match")]
