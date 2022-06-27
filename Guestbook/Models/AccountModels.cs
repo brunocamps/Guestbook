@@ -45,6 +45,7 @@ namespace Guestbook.Models
         [Display(Name = "Current password")]
         public string OldPassword { get; set; }
 
+        // annotation to confirm password length
         [Required]
         //[ValidatePasswordLength]
         [DataType(DataType.Password)]
