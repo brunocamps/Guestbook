@@ -8,6 +8,7 @@ namespace Guestbook.Models
     public class CommentSummary
     {
         // update comment summary
+        // done
         public string UserName { get; set; }
         public int NumberOfComments { get; set; }
     }
