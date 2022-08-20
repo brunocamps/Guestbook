@@ -9,6 +9,8 @@ namespace Guestbook.Models
     {
         // update comment summary
         // done
+
+        // should update params
         public string UserName { get; set; }
         public int NumberOfComments { get; set; }
     }
